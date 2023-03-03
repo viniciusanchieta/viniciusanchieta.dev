@@ -1,3 +1,75 @@
 {
-  "extends": "next/core-web-vitals"
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "plugins": ["react", "prettier", "import-helpers"],
+  "extends": [
+    "plugin:react/recommended",
+    "plugin:prettier/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "eslint-config-prettier",
+    "prettier"
+  ],
+  "ignorePatterns": [".eslintrc.js", "jest.config.js"],
+  "parserOptions": {
+    "project": "./tsconfig-eslint.json",
+    "createDefaultProgram": true
+  },
+  "rules": {
+    "prettier/prettier": [
+      "warn",
+      {
+        "quoteProps": "as-needed",
+        "trailingComma": "none",
+        "singleQuote": true,
+        "jsxSingleQuote": true,
+        "useTabs": false,
+        "tabWidth": 2
+      }
+    ],
+    "@typescript-eslint/ban-types": [
+      "error",
+      {
+        "extendDefaults": true,
+        "types": {
+          "{}": false
+        }
+      }
+    ],
+    "@typescript-eslint/triple-slash-reference": "off",
+    "@typescript-eslint/strict-boolean-expressions": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/consistent-type-definitions": "off",
+    "@typescript-eslint/no-floating-promises": "off",
+    "@typescript-eslint/no-unused-vars": "off",
+    "@typescript-eslint/no-namespace": "off",
+    "@typescript-eslint/no-misused-promises": "off",
+    "@typescript-eslint/consistent-type-assertions": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
+    "react/prop-types": "off",
+    "import/export": "off",
+    "import-helpers/order-imports": [
+      "warn",
+      {
+        "newlinesBetween": "never",
+        "groups": [
+          "module",
+          "/^~/domain/",
+          "/^~/data/",
+          "/^~/infra/",
+          "/^~/main/",
+          "/^~/presentation/",
+          ["parent", "sibling", "index"]
+        ],
+        "alphabetize": {
+          "order": "asc",
+          "ignoreCase": false
+        }
+      }
+    ]
+  }
 }
