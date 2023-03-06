@@ -1,38 +1,82 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![image](./public/cover.png)
 
-## Getting Started
+<h1 align="center">Personal Website</h1>
 
-First, run the development server:
+<p align="center" margin-top="25px" >
+  <img src="https://img.shields.io/badge/Status-Completed-blueviolet" alt="Status" />
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/viniciusanchieta/viniciusanchieta.dev?color=blueviolet">
+
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/viniciusanchieta/viniciusanchieta.dev?color=blueviolet">
+
+  <img alt="GitHub" src="https://img.shields.io/github/license/viniciusanchieta/viniciusanchieta.dev?color=blueviolet">
+</p>
+
+## About
+
+This repository contains the code for my personal website, which has been updated using Next.js v13 / React, Tailwind CSS, Framer Motion, Jest and Testing Library, Typescript, and following Domain-Driven Design (DDD) principles.
+
+## Structure
+
+The structure of the project is based on the DDD (Domain Driven Design) pattern, where the domain is divided into layers, each with its own responsibility.
+Layers:
+
+- Application: responsible for the application's business rules.
+- Domain: responsible for creating the domain entities.
+- Infra: responsible for the data access layer.
+- Main: responsible for the application's entry point.
+- Presentation: responsible for the application's presentation layer.
+
+## Technologies
+
+This project was developed with the following technologies:
+
+- [React](https://reactjs.org)
+- [Next.js](https://nextjs.org)
+- [TypeScript](https://www.typescriptlang.org)
+- [Tailwind CSS](https://tailwindcss.com)
+- [Framer Motion](https://www.framer.com/motion)
+- [Jest](https://jestjs.io)
+- [Testing Library](https://testing-library.com)
+- [NPM](https://www.npmjs.com)
+
+## Getting started
+
+Clone the project and access the folder.
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+$ cd viniciusanchieta.dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Follow the steps below:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# Install the dependencies
+$ npm install
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+```bash
+# Start the project
+$ npm run dev
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Extra step for running tests:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```bash
+# Run the tests
+$ npm run test
+```
 
-## Learn More
+Coverages:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+# Run the tests
+$ npm run test:ci
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contributors
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+[![](https://contrib.rocks/image?repo=viniciusanchieta/viniciusanchieta.dev)](https://github.com/viniciusanchieta/viniciusanchieta.dev/graphs/contributors)
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This project is under the MIT license. See the [LICENSE](LICENSE.md) file for more details.
