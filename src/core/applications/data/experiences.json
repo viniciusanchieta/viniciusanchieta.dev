@@ -1,0 +1,34 @@
+[
+  {
+    "position": "Full Stack Engineer (Remote)",
+    "company": "Houpa!",
+    "location": "São Paulo - Brazil",
+    "startDate": "2021-08-01",
+    "endDate": "2023-03-01",
+    "description": "• Developing version control using AWS CodeCommit and GitHub;\n• Using multiple front-end languages and libraries (HTML/CSS, JavaScript, Material UI, and ReactJs);\n• Creating RESTful APIs with NestJS and NodeJS;\n• Creating databases using MySQL and PostgreSQL;\n• Applying domain-oriented design (DDD) patterns in projects (back-end and front-end);\n• Implementing Test Driven Development (TDD) in ReactJs."
+  },
+  {
+    "position": "Full Stack Engineer (Remote)",
+    "company": "Must University",
+    "location": "Florida, United States",
+    "startDate": "2020-12-01",
+    "endDate": "2021-08-01",
+    "description": "• Defining the technologies used in each project;\n• Creating RESTful APIs with Laravel;\n• Creating technical and non-technical documentation;\n• Versioning code using AWS CodeCommit;\n• Using multiple front-end languages and libraries (HTML/CSS, JavaScript, Bootstrap, and ReactJs);\n• Using back-end languages and frameworks (PHP, Laravel, and CodeIgniter);\n• Creating databases using MySQL."
+  },
+  {
+    "position": "Full Stack Developer (Hybrid)",
+    "company": "BRFLOR",
+    "location": "São Paulo - Brazil",
+    "startDate": "2019-09-01",
+    "endDate": "2020-12-01",
+    "description": "• Developing version control using GitHub;\n• Defining and creating techniques focused on the technology that will be used in each project;\n• Adapting systems to integrate new components;\n• Creating RESTful APIs with Laravel;\n• Developing databases with MySql PostgreSQL, and SQLite."
+  },
+  {
+    "position": "Web Developer (Freelancer)",
+    "company": null,
+    "location": "São Paulo - Brazil",
+    "startDate": "2015-09-01",
+    "endDate": "2020-12-01",
+    "description": "• Developing landing pages using HTML, CSS, JavaScript, and PHP;\n• Implementing SEO strategies to improve website visibility;\n• Designing and developing responsive layouts to ensure optimal user experience across devices;\n• Collaborating with clients to understand project requirements and deliver high-quality solutions;\n• Maintaining and updating websites to ensure optimal performance and functionality;\n• Implementing web analytics tools to measure and analyze website traffic and engagement;\n• Troubleshooting technical issues and providing timely solutions to ensure project deadlines are met;\n• Staying up-to-date with the latest web development technologies and industry trends."
+  }
+]

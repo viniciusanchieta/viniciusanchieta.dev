@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Component Generator for React",
+    "description": "Extension for VSCode that generates standardized components in the React framework, allowing for quick creation of new components and increasing developer productivity.",
+    "links": {
+      "website": "https://marketplace.visualstudio.com/items?itemName=viniciusanchieta.generate-component-and-style",
+      "github": "https://github.com/viniciusanchieta/generate-component-for-react"
+    }
+  },
+  {
+    "name": "Finexps",
+    "description": "Finexps is an efficient expenses management app with features such as reports and statistics to aid in financial control.",
+    "links": {
+      "website": "https://finexps.com/",
+      "github": "https://github.com/viniciusanchieta/finexps.com"
+    }
+  }
+]
