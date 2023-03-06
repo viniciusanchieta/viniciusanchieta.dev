@@ -1,11 +1,14 @@
-import { Inter } from 'next/font/google';
+import { makeHomePage } from '~/core/main/factories/presentation';
+import {
+  makeRemoteLoadExperiences,
+  makeRemoteLoadProjects
+} from '~/core/main/factories/usecases';
 
-const inter = Inter({ subsets: ['latin'] })
+export default async function Page() {
+  const loadExperiences = makeRemoteLoadExperiences();
+  const loadExperiencesResponse = await loadExperiences.run();
+  const loadProjects = makeRemoteLoadProjects();
+  const loadProjectsResponse = await loadProjects.run();
 
-export default function Home() {
-  return (
-    <h1>
-      Hello world!
-    </h1>
-  )
+  return makeHomePage({ loadExperiencesResponse, loadProjectsResponse });
 }
