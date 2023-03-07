@@ -3,7 +3,11 @@ import type { HeaderProps } from './interfaces';
 
 function HeaderComponent({ items }: HeaderProps) {
   return (
-    <header className='flex justify-between items-center h-112px text-white bg-gradient-to-b from-main via-main to-transparent'>
+    <header
+      className='flex justify-between items-center h-112px text-white bg-gradient-to-b from-main via-main to-transparent'
+      role='region'
+      aria-label='Header'
+    >
       <div className='[&>svg]:fill-white'>
         <VAIcon />
       </div>
@@ -11,7 +15,12 @@ function HeaderComponent({ items }: HeaderProps) {
         <ul className='flex gap-8'>
           {items.map((item: { title: string; onClick: () => void }) => (
             <li key={item.title}>
-              <button className='font-light text-lg' onClick={item.onClick}>
+              <button
+                className='font-light text-lg'
+                onClick={item.onClick}
+                role='button'
+                aria-label={`Navigate to ${item.title} section`}
+              >
                 {item.title}
               </button>
             </li>

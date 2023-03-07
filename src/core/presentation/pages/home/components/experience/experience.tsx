@@ -18,7 +18,11 @@ function ExperienceComponent({
   }
 
   return (
-    <section className='flex flex-col font-light gap-3'>
+    <section
+      className='flex flex-col font-light gap-3'
+      role='region'
+      aria-label='Experience'
+    >
       <div className='flex justify-between items-start sm:flex-col'>
         <p className='text-white text-2xl sm:text-xl'>{position}</p>
         <p className='text-gray-100 text-base sm:text-sm'>

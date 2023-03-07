@@ -12,6 +12,8 @@ function SocialButtonComponent({ url, icon, title }: SocialButtonProps) {
     <button
       onClick={handleClick}
       className='flex [&>svg]:fill-gray-100 text-gray-100 border-gray-100 border py-3 items-center gap-2 w-210px justify-center rounded-md'
+      role='button'
+      aria-label={`Navigate to ${title}`}
     >
       {icon}
       <span className='text-gray-100 text-base'>{title}</span>

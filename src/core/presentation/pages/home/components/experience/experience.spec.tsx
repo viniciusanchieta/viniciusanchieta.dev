@@ -1,13 +1,28 @@
 import { render, screen } from '@testing-library/react';
 import ExperienceComponent from './experience';
+import type { ExperienceProps } from './interfaces';
 
-const makeSut = () => render(<ExperienceComponent title='Hello World' />);
+const defaultProps = {
+  position: 'Software Engineer',
+  company: 'Finexps',
+  location: 'Remote',
+  startDate: '2021',
+  endDate: 'Present',
+  description: 'React'
+} as ExperienceProps;
+const makeSut = () => render(<ExperienceComponent {...defaultProps} />);
 
-describe('ExperienceComponent', () => {
-	test('should render', () => {
-		makeSut(); 
-	const title = screen.getByRole('heading');
-	expect(title).toBeInTheDocument();
+describe('Experience component', () => {
+  test('should render', () => {
+    makeSut();
+    const component = screen.getByRole('region');
+    expect(component).toBeInTheDocument();
+  });
 
-	});
+  test('should render with company null', () => {
+    defaultProps.company = null;
+    makeSut();
+    const component = screen.getByRole('region');
+    expect(component).not.toHaveTextContent('Finexps');
+  });
 });
