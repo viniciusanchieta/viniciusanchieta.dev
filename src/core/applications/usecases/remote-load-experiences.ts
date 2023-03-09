@@ -10,6 +10,8 @@ export class RemoteLoadExperiences implements LoadExperiences {
 function parseResponse(
   response: RemoteLoadExperiences.Response
 ): LoadExperiences.Response {
+  console.log('Server side');
+
   const defaultConfigDate = {
     month: 'short',
     year: 'numeric'
