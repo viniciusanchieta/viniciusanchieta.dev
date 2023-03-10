@@ -21,12 +21,11 @@ const customJestConfig = {
     '!src/**/layouts/**/*.{ts,tsx}',
     '!src/**/page.{ts,tsx}',
     '!src/**/layout.{ts,tsx}',
-    '!src/**/*.stories.{ts,tsx}',
-    '!src/**/*-email.{ts,tsx}',
     '!src/**/env.{ts,tsx}',
     '!src/**/infra/**/*.{ts,tsx}',
     '!src/**/analytics.{ts,tsx}',
-    '!src/**/domain/**/*.{ts,tsx}'
+    '!src/**/domain/**/*.{ts,tsx}',
+    '!src/**/*{.stories,-email,-factory}.{ts,tsx}'
   ]
 };
 
