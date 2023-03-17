@@ -31,14 +31,14 @@ function ProjectComponent({
           role='button'
           aria-label={`Navigate to ${name} website`}
         >
-          <div className='bg-main rounded-md py-4 px-6 text-white [&>svg]:fill-white flex gap-2 items-center'>
+          <div className='bg-main rounded-md py-4 px-6 text-white [&>svg]:fill-white flex gap-2 items-center hover:bg-gray-200 transition-all duration-300 ease-in-out'>
             <ClipIcon />
             <span className='text-base'>See now</span>
           </div>
         </button>
         <button
           onClick={handleGithub}
-          className='[&>svg]:fill-white mx-auto w-30px h-30px'
+          className='[&>svg]:fill-white mx-auto w-30px h-30px [&>svg]:hover:fill-gray-200 [&>svg]:transition-all [&>svg]:duration-300 [&>svg]:ease-in-out'
           role='button'
           aria-label={`Navigate to ${name} GitHub repository`}
         >
