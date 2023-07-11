@@ -1,5 +1,6 @@
 import { type Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import { AnalyticsWrapper } from '~/core/presentation/common/audiences';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -47,6 +48,7 @@ export default function RootLayout({
       <body
         className={`bg-main px-16 sm:px-8 xl:w-1078px xl:px-0 m-auto ${inter.className}`}
       >
+        <AnalyticsWrapper />
         {children}
       </body>
     </html>
