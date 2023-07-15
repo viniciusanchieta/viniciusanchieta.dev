@@ -8,7 +8,7 @@ export namespace LoadExperiences {
     company: string | null;
     location: string;
     startDate: string;
-    endDate?: string;
+    endDate: string;
     description: string;
   }[];
 }
