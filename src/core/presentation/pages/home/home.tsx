@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { useCallback, useState } from 'react';
 import type { HomePageProps } from '~/core/domain';
 import {
   EmailIcon,
@@ -21,9 +22,15 @@ function HomePage({
   loadExperiencesResponse,
   loadProjectsResponse
 }: HomePageProps) {
-  function handleScrollToSection(id: string) {
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
-  }
+  const [activeButton, setActiveButton] = useState('resume');
+
+  const handleScrollToSection = useCallback(
+    (id: string) => {
+      document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+      setActiveButton(id);
+    },
+    [setActiveButton]
+  );
 
   return (
     <>
@@ -31,15 +38,18 @@ function HomePage({
         items={[
           {
             title: 'Resume',
-            onClick: () => handleScrollToSection('resume')
+            onClick: () => handleScrollToSection('resume'),
+            active: activeButton === 'resume'
           },
           {
             title: 'Projects',
-            onClick: () => handleScrollToSection('projects')
+            onClick: () => handleScrollToSection('projects'),
+            active: activeButton === 'projects'
           },
           {
             title: 'Contact',
-            onClick: () => handleScrollToSection('contact')
+            onClick: () => handleScrollToSection('contact'),
+            active: activeButton === 'contact'
           }
         ]}
       />

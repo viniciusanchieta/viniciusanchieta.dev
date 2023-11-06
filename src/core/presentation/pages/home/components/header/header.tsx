@@ -8,15 +8,17 @@ function HeaderComponent({ items }: HeaderProps) {
       role='region'
       aria-label='Header'
     >
-      <div className='[&>svg]:fill-white'>
+      <div className='[&>svg]:fill-white rounded-md hover:bg-gray-200 p-4 hover:transition-colors hover:duration-300 duration-200 cursor-pointer'>
         <VAIcon />
       </div>
       <div>
         <ul className='flex gap-8'>
-          {items.map((item: { title: string; onClick: () => void }) => (
+          {items.map(item => (
             <li key={item.title}>
               <button
-                className='font-light text-lg'
+                className={`font-light text-lg hover:bg-gray-200 px-4 py-2 rounded-md hover:transition-colors hover:duration-300 duration-200 ${
+                  item.active && 'bg-gray-200'
+                }`}
                 onClick={item.onClick}
                 role='button'
                 aria-label={`Navigate to ${item.title} section`}
