@@ -5,16 +5,20 @@ import './globals.css';
 
 export const metadata: Metadata = {
   title: 'Vinicius Anchieta',
+
   description:
     'Vinicius Anchieta is a highly skilled software engineer with a passion for innovation and a constant drive to learn new technologies. With expertise in HTML, CSS, JavaScript, and TypeScript, Vinicius is proficient in using ReactJS, NextJS, React Native, Material-UI, and Tailwind CSS to create attractive and intuitive user interfaces. He is also highly skilled in unit testing, ensuring the functionality and reliability of the applications he creates.',
+
   keywords:
     'Vinicius Anchieta, software engineer, full-stack development, ReactJS, NextJS, React Native, Material-UI, Tailwind CSS, unit testing, AWS, NestJS, NodeJS, Bootstrap, SEO, web analytics, Finexps, generate component for react',
+
   authors: [
     {
       name: 'Vinicius Anchieta',
       url: 'https://viniciusanchieta.dev'
     }
   ],
+
   openGraph: {
     url: 'https://viniciusanchieta.dev',
     title: 'Vinicius Anchieta',
@@ -27,6 +31,7 @@ export const metadata: Metadata = {
       }
     ]
   },
+
   icons: [
     {
       url: '/favicon.png',
